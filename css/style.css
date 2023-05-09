@@ -510,7 +510,7 @@ h6{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-image: url(../images/tarjeta__waldemar.jpg);
+    background-image: url(../images/tarjeta__waldemarr.jpg);
     background-size: cover;
     background-position: center top;
 }
@@ -596,6 +596,8 @@ video{
 
     /*header mobile*/
 
+    
+
     .header__nav ul{
         display: flex;
         flex-direction: column;
@@ -605,7 +607,7 @@ video{
         margin-left: -6%;
         margin-right: 0px;
         width: 80vw;
-        height: 10000%;
+        height: auto;
         padding: 0%;
 
     }
@@ -811,30 +813,35 @@ video{
         height: 40vh;        
         font-size: 220%;
         background-position: center;
+        scroll-margin-top: 200px;
     }
 
     #tarjeta__ricky{
         height: 40vh;        
         font-size: 220%;
         background-position: center;
+        scroll-margin-top: 200px;
     }
 
     #tarjeta__sqq{
         height: 40vh;        
         font-size: 220%;
         background-position: center;
+        scroll-margin-top: 200px;
     }
 
     #tarjeta__rock{
         height: 40vh;        
         font-size: 220%;
         background-position: center;
+        scroll-margin-top: 200px;
     }
 
     #tarjeta__waldemar{
         height: 40vh;        
         font-size: 220%;
         background-position: center;
+        scroll-margin-top: 200px;
     }
 
     /*contact mobile*/
@@ -859,6 +866,13 @@ video{
         align-content: center;
     }    
 
+    /*discography*/
+
+    .discography__title{
+        margin-top: 70px;
+        font-size: 50px;
+        margin-bottom: 60px;
+    }
 
 }
 
@@ -868,6 +882,8 @@ video{
 
 @media (min-width: 768px) and (max-width: 992px){
     /*header tablet*/
+
+    
 
     .header__nav ul{
         display: flex;
@@ -1082,30 +1098,35 @@ video{
         height: 40vh;        
         font-size: 220%;
         background-position: center top;
+        scroll-margin-top: 200px;
     }
 
     #tarjeta__ricky{
         height: 40vh;        
         font-size: 220%;
         background-position: center top;
+        scroll-margin-top: 200px;
     }
 
     #tarjeta__sqq{
         height: 40vh;        
         font-size: 220%;
         background-position: center top;
+        scroll-margin-top: 200px;
     }
 
     #tarjeta__rock{
         height: 40vh;        
         font-size: 220%;
         background-position: center top;
+        scroll-margin-top: 200px;
     }
 
     #tarjeta__waldemar{
         height: 40vh;        
         font-size: 220%;
         background-position: center top;
+        scroll-margin-top: 200px;
     }
 
     /*contact tablet*/
@@ -1129,6 +1150,14 @@ video{
         justify-content: center;
         align-content: center;
     }  
+
+    /*discography*/
+
+    .discography__title{
+        margin-top: 70px;
+        font-size: 50px;
+        margin-bottom: 60px;
+    }
 }
 
 @media (min-width: 0px) and (max-width: 992px){
@@ -1162,30 +1191,35 @@ video{
             height: 80vh;        
             font-size: 220%;
             background-position: center top;
+            scroll-margin-top: 10px;
         }
 
         #tarjeta__ricky{
             height: 80vh;        
             font-size: 220%;
             background-position: center top;
+            scroll-margin-top: 10px;
         }
 
         #tarjeta__sqq{
             height: 80vh;        
             font-size: 220%;
             background-position: center top;
+            scroll-margin-top: 10px;
         }
 
         #tarjeta__rock{
             height: 80vh;        
             font-size: 220%;
             background-position: center top;
+            scroll-margin-top: 10px;
         }
 
         #tarjeta__waldemar{
             height: 80vh;        
             font-size: 220%;
             background-position: center top;
+            scroll-margin-top: 10px;
         }
 
     }
