@@ -654,6 +654,14 @@ main .avisos #fechas__title {
   background-size: cover;
   background-position: center top;
 }
+.networks #tarjeta__sqq .networks__icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.networks #tarjeta__sqq .networks__icons a {
+  margin: 5%;
+}
 @media (max-width: 992px) {
   .networks #tarjeta__sqq {
     height: 40vh;
@@ -687,6 +695,14 @@ main .avisos #fechas__title {
   background-image: url(../images/tarjeta__rickyy.jpg);
   background-size: cover;
   background-position: center top;
+}
+.networks #tarjeta__ricky .networks__icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.networks #tarjeta__ricky .networks__icons a {
+  margin: 5%;
 }
 @media (max-width: 992px) {
   .networks #tarjeta__ricky {
@@ -722,6 +738,14 @@ main .avisos #fechas__title {
   background-size: cover;
   background-position: center top;
 }
+.networks #tarjeta__rock .networks__icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.networks #tarjeta__rock .networks__icons a {
+  margin: 5%;
+}
 @media (max-width: 992px) {
   .networks #tarjeta__rock {
     height: 40vh;
@@ -755,6 +779,14 @@ main .avisos #fechas__title {
   background-image: url(../images/tarjeta__waldemarr.jpg);
   background-size: cover;
   background-position: center top;
+}
+.networks #tarjeta__waldemar .networks__icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.networks #tarjeta__waldemar .networks__icons a {
+  margin: 5%;
 }
 @media (max-width: 992px) {
   .networks #tarjeta__waldemar {

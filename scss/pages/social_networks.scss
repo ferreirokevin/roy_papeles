@@ -54,6 +54,14 @@
         background-image: url(../images/tarjeta_sqq.jpg);
         background-size: cover;
         background-position: center top;
+        .networks__icons {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            a{
+                margin: 5%;
+            }
+        }
         @include mediaquery-tablet(){
             height: 40vh;        
             font-size: 220%;
@@ -82,6 +90,14 @@
         background-image: url(../images/tarjeta__rickyy.jpg);
         background-size: cover;
         background-position: center top;
+        .networks__icons {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            a{
+                margin: 5%;
+            }
+        }
         @include mediaquery-tablet(){
             height: 40vh;        
             font-size: 220%;
@@ -110,6 +126,14 @@
         background-image: url(../images/tarjeta__rock.jpg);
         background-size: cover;
         background-position: center top;
+        .networks__icons {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            a{
+                margin: 5%;
+            }
+        }
         @include mediaquery-tablet(){
             height: 40vh;        
             font-size: 220%;
@@ -138,6 +162,14 @@
         background-image: url(../images/tarjeta__waldemarr.jpg);
         background-size: cover;
         background-position: center top;
+        .networks__icons {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            a{
+                margin: 5%;
+            }
+        }
         @include mediaquery-tablet(){
             height: 40vh;        
             font-size: 220%;
