@@ -1,0 +1,71 @@
+.tickets__card{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 15%;
+    margin-top: 10%;
+    .card{
+        width: 580px;
+        height: 235px;
+        background-image: url(../images/tickets.png);
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;   
+        text-align: center;
+        color: $color-secundario;
+        a{
+            background-color: $color-secundario;
+            color: white;
+            border-radius: 20px;
+            width: 25%;
+            text-align: center;
+            &:hover{
+                color: $color-secundario;
+                background-color: $color-terciario;
+            }
+            @include mediaquery-tablet(){
+                width: 50%;
+            }
+        }
+        p{
+            &:first-child{
+                font-size: 150%;
+                font-weight: strong;
+            }
+            @include mediaquery-tablet(){
+                font-size: 50%;
+            }
+            &:first-child{
+                @include mediaquery-tablet(){
+                    font-size: 100%;
+                }
+            }
+        }
+        @include mediaquery-tablet(){
+            top: 20%;
+            margin: 2%;
+            width: 372px;
+            height: 150px;
+        }
+        &:first-child{
+            @include mediaquery-tablet(){
+                top: 50%;
+            }
+        }
+        
+    }
+    @include mediaquery-tablet(){
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+    
+}
+
+
+

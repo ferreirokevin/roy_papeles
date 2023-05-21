@@ -1,0 +1,84 @@
+.contact{
+    margin-bottom: 10%;
+    display: flex;
+    justify-content: center;
+    img{
+        max-width: 25%;
+        border-radius: 25px;
+        margin-right: 5%;
+        @include mediaquery-tablet(){
+            display: none;
+        }
+    }
+
+    .contact__box{
+        background-color: $color-secundario;
+        width: 55%;
+        border-radius: 25px;
+
+        form{
+            margin-top: 2%;
+            margin-left: 8%;
+            margin-right: 8%;
+            color: white;
+            padding-top: 5%;
+            padding-bottom: 5%;
+
+            input{
+                width: 100%;
+                height: 5%;
+                border: 0;
+                &:last-child{
+                    width: 25%;
+                    height: 5%;
+                    border: 0;
+                    margin-top: 2%;
+                    margin-left: 75%;
+                }
+                &:hover{
+                    color: $color-terciario;
+                    background-color: white;
+                    cursor: pointer;
+                }
+                
+                &:active{
+                    color: white;
+                    background-color: lightgrey;
+                }
+                
+            }
+
+            .contact__send{
+                background-color: $color-terciario;
+                color: white;
+                border-radius: 20px;
+                width: 25%;
+            }
+
+            textarea{
+                width: 100%;
+                height: 45vh;
+                @include mediaquery-tablet(){
+                    height: 45%;
+                }
+            }
+
+        }
+        @include mediaquery-tablet(){
+            width: 90vw;
+        }
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,35 @@
+footer{
+    background-color: $color-primario;
+    margin-top: 0px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    grid-area: footer;
+    .footer__icons{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        img{
+            margin: 20px;
+            max-width: 60px;
+            &:hover{
+                margin: 20px;
+                max-width: 70px;
+            }
+        }
+        @include mediaquery-tablet(){
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: center;
+        }
+        
+    }
+    p{
+        color: white;
+    }
+
+}
+

@@ -1,0 +1,86 @@
+.main__gallery{
+    min-height: 2100px;
+    #carouselExampleIndicators{
+        max-width: 80%;
+        max-height: 100%;
+        left: 9%;
+        .carousel-inner{
+            margin-bottom: 15%;
+            height: 600px;
+            background-color: $color-secundario;
+            img{
+                background-color: $color-secundario;
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+            @include mediaquery-tablet(){
+                height: 300px;
+                margin: 0%;
+            }
+            
+        }
+        .carousel-control-prev{
+            width: 10%;
+            background-color: $color-terciario;
+        }
+        
+        .carousel-control-next{
+            width: 10%;
+            background-color: $color-terciario;
+        }
+        @include mediaquery-tablet(){
+            margin-top: 50px;
+        }
+
+    }
+    #carouselExampleIndicators1{
+        max-width: 80%;
+        max-height: 100%;
+        left: 9%;
+        margin-top: 350px;
+        .carousel-inner{
+            margin-bottom: 15%;
+            height: 600px;
+            background-color: $color-secundario;
+            video{
+                margin-left: 10%;
+            }
+            @include mediaquery-tablet(){
+                height: 300px;
+                margin: 0%;
+            }
+            
+        }
+        .carousel-control-prev{
+            width: 10%;
+            background-color: $color-terciario;
+        }
+        
+        .carousel-control-next{
+            width: 10%;
+            background-color: $color-terciario;
+        }
+        @include mediaquery-tablet(){
+            max-width: 80%;
+            max-height: 100%;
+            left: 9%;
+            margin-top: 50px;
+        }
+    
+    }
+    @include mediaquery-tablet(){
+        min-height: 900px;
+    }
+}
+
+
+
+
+
+
+ 
+
+
+
+

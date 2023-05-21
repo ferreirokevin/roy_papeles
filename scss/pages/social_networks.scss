@@ -1,0 +1,169 @@
+.networks{
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    #tarjeta__networks{
+        width: 100%;
+        height: 100vh;
+        top: 90px;
+        color: white;
+        text-align: center;
+        font-size: 320%;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background-image: url(../images/tarjeta__redess.jpg);
+        background-size: cover;
+        background-position: center top;
+        .networks__icons {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            a{
+                margin: 5%;
+            }
+        }
+        @include mediaquery-tablet(){
+            height: 40vh;        
+            font-size: 220%;
+            background-position: center top;
+            scroll-margin-top: 200px;
+        }
+        @include mediaquery-mobile(){
+            background-position: center;
+        }
+        @include mediaquery-landscape(){
+            height: 80vh;
+            scroll-margin-top: 10px;
+        }
+    }
+    #tarjeta__sqq{
+        width: 100%;
+        height: 100vh;
+        top: 90px;
+        color: white;
+        text-align: center;
+        font-size: 320%;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background-image: url(../images/tarjeta_sqq.jpg);
+        background-size: cover;
+        background-position: center top;
+        @include mediaquery-tablet(){
+            height: 40vh;        
+            font-size: 220%;
+            background-position: center top;
+            scroll-margin-top: 200px;
+        }
+        @include mediaquery-mobile(){
+            background-position: center;
+        }
+        @include mediaquery-landscape(){
+            height: 80vh;
+            scroll-margin-top: 10px;
+        }
+    }
+    #tarjeta__ricky{
+        width: 100%;
+        height: 100vh;
+        top: 90px;
+        color: white;
+        text-align: center;
+        font-size: 320%;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background-image: url(../images/tarjeta__rickyy.jpg);
+        background-size: cover;
+        background-position: center top;
+        @include mediaquery-tablet(){
+            height: 40vh;        
+            font-size: 220%;
+            background-position: center top;
+            scroll-margin-top: 200px;
+        }
+        @include mediaquery-mobile(){
+            background-position: center;
+        }
+        @include mediaquery-landscape(){
+            height: 80vh;
+            scroll-margin-top: 10px;
+        }
+    }
+    #tarjeta__rock{
+        width: 100%;
+        height: 100vh;
+        top: 90px;
+        color: white;
+        text-align: center;
+        font-size: 320%;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background-image: url(../images/tarjeta__rock.jpg);
+        background-size: cover;
+        background-position: center top;
+        @include mediaquery-tablet(){
+            height: 40vh;        
+            font-size: 220%;
+            background-position: center top;
+            scroll-margin-top: 200px;
+        }
+        @include mediaquery-mobile(){
+            background-position: center;
+        }
+        @include mediaquery-landscape(){
+            height: 80vh;
+            scroll-margin-top: 10px;
+        }
+    }
+    #tarjeta__waldemar{
+        width: 100%;
+        height: 100vh;
+        top: 90px;
+        color: white;
+        text-align: center;
+        font-size: 320%;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background-image: url(../images/tarjeta__waldemarr.jpg);
+        background-size: cover;
+        background-position: center top;
+        @include mediaquery-tablet(){
+            height: 40vh;        
+            font-size: 220%;
+            background-position: center top;
+            scroll-margin-top: 200px;
+        }
+        @include mediaquery-mobile(){
+            background-position: center;
+        }
+        @include mediaquery-landscape(){
+            height: 80vh;
+            scroll-margin-top: 10px;
+        }
+    }
+    img{
+        max-width: 4vw;
+        &:hover{    
+            transform: rotate(30deg);
+            transition: all 0.5s ease;
+        
+        }
+        @include mediaquery-tablet(){
+            max-width: 10vw;
+        }
+        @include mediaquery-landscape(){
+            max-width: 4vw;
+        }
+    }
+}

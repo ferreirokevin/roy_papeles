@@ -1,0 +1,20 @@
+/* Error: Undefined mixin.
+ *   ,
+ * 2 | /     @include mediaquery-tablet(){
+ * 3 | |         margin-top: 70px;
+ * 4 | |         font-size: 50px;
+ * 5 | |         margin-bottom: 60px;
+ * 6 | \     }
+ *   '
+ *   scss\pages\discography.scss 2:5  root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined mixin.\a   \2577 \a 2 \2502  \250c      @include mediaquery-tablet(){\a 3 \2502  \2502          margin-top: 70px;\a 4 \2502  \2502          font-size: 50px;\a 5 \2502  \2502          margin-bottom: 60px;\a 6 \2502  \2514      }\a   \2575 \a   scss\\pages\\discography.scss 2:5  root stylesheet";
+}

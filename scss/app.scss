@@ -1,0 +1,90 @@
+@font-face {
+    font-family: "Poppins Semi Bold";
+    src: url(../fonts/Poppins/Poppins-SemiBold.ttf);
+}
+
+*{
+    font-family: "poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    text-decoration: none !important;
+    font-family: "Poppins Semi Bold";
+}
+
+@import "./basics/mediaquery";
+//basics
+@import "./basics/basic.scss";
+
+//layout
+@import "./layout/footer.scss";
+@import "./layout/header.scss";
+@import "./layout/main.scss";
+
+//pages
+@import "./pages/contact.scss";
+@import "./pages/discography.scss";
+@import "./pages/gallery.scss";
+@import "./pages/index.scss";
+@import "./pages/social_networks.scss";
+@import "./pages/tickets.scss";
+
+
+
+
+body{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 99px auto 300px;
+    grid-template-areas: 
+        "header"
+        "main"
+        "footer"
+    ;
+    background-image: url(../images/vista-papel-arrugado-blanco.jpg);
+    background-size: cover;
+}
+
+h1{
+    font-size: 4vw;
+    margin-top: -40%;
+    margin-left: 5%;
+    color: white;  
+    @include mediaquery-tablet(){
+        font-size: 7vw;
+        color: white;   
+        margin: 0%;
+        z-index: 1;
+    }
+}
+h2{
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    color: black !important;
+}
+h3{
+    font-weight: bold;
+    color: black;
+    @include mediaquery-tablet(){
+        font-size: 100%;
+    }
+    
+}
+h4{
+    color: grey;
+    @include mediaquery-tablet(){
+        font-size: 80%;
+    }
+}
+h5{
+    font-size: 155%;
+}
+h6{
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    color: white;
+
+}

@@ -5,7 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Roy Papeles</title>
         <link rel="shortcut icon" href="./images/logo_blue.png">
-        <link rel="stylesheet" href="./css/style.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link rel="stylesheet" href="./css/app.css">
     </head>
 
     <body>
@@ -20,10 +21,7 @@
             <div class="header__container">
 
                 <div class="header__logo">
-                    <a href="./index.html">
-                        <img src="./images/logo_blue.png" alt="roy" >
-                        <img src="./images/logo_white.png" alt="roy">
-                    </a>
+                    <a href="../index.html"><img src="../images/logo_blue.png" alt="roy" ></a>
                 </div>
                 <div class="menu">
                     <label for="menu">
@@ -59,9 +57,10 @@
 
 
         <main> 
-            <a href="./pages/tickets.html">
 
+            <a href="./pages/tickets.html">
                 <div class="avisos">
+
                     <p>Proximas<br>Fechas</p>
                     <div class="fechas">
                         <p id="fechas__title">10/6 Paraná</p>
@@ -69,16 +68,21 @@
                         <p id="fechas__title">9/6 Paraná</p>
                         <p>Waldemar Salas y Los Jesse Pinkmann<br>Junto a Viejas Locas en Monets</p>
                         <p id="comprar__fechas">Comprar</p>
-                    </div>                
+                    </div>                              
+                             
                 </div>
-                
             </a>
+                      
+
+            
+
+            
             <section>
 
                 <div class="front__page">
                         
                     <div class="front__img">
-                        <img src="./images/portadaa.jpg" alt="">
+                        <img src="./images/portadaa.jpg" alt="">                        
                     </div>
 
                     <div class="front__logo">                        
@@ -93,9 +97,9 @@
             <section>
                 <h2 id="bands">Bandas</h2>
 
-                <div class="bands">
+                <div class="bands" >
 
-                    <div id="bands__one">
+                    <div id="bands__one" data-aos="fade-up">
 
                         <a href="./pages/social_networks.html#tarjeta__redes">
                             <img src="./images/logo_blue.png" alt="">
@@ -115,9 +119,9 @@
 
                     </div>
 
-                    <div id="bands__two">
+                    <div id="bands__two" data-aos="fade-up">
 
-                        <a href="./pages/social_networks.html#tarjeta__ricky" style="scroll-margin-top: 1800px;">
+                        <a href="./pages/social_networks.html#tarjeta__ricky">
                             <img src="./images/logo_la_ricky.png" alt="">
                             <div class="text">
                                 <h3>LA RICKY BAND</h3>
@@ -128,7 +132,7 @@
 
                     </div>
 
-                    <div id="bands__three">
+                    <div id="bands__three" data-aos="fade-up">
 
                         <a href="./pages/social_networks.html#tarjeta__waldemar">
                             <img src="./images/logo_waldemar.png" alt="">
@@ -155,7 +159,7 @@
 
 
             <section>
-                <div class="about__me">
+                <div class="about__me" data-aos="fade-up">
                     <div id="about__title">
                         <p>Sobre Mi</p>
                     </div>
@@ -164,8 +168,6 @@
                     </div>
                 </div>
             </section>
-
-
 
         </main>
 
@@ -190,7 +192,10 @@
         </footer>
 
 
-
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
                 
     </body>
 </html>
