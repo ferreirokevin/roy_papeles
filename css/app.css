@@ -830,6 +830,7 @@ main .avisos #fechas__title {
   height: 25%;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   margin-bottom: 15%;
   margin-top: 10%;
@@ -844,6 +845,7 @@ main .avisos #fechas__title {
   justify-content: center;
   align-items: center;
   text-align: center;
+  margin-top: 1%;
   color: #181a14;
 }
 .tickets__card .card a {
@@ -873,15 +875,14 @@ main .avisos #fechas__title {
 }
 @media (max-width: 992px) {
   .tickets__card .card p:first-child {
-    font-size: 100%;
+    font-size: 90%;
   }
 }
 @media (max-width: 992px) {
   .tickets__card .card {
-    top: 20%;
     margin: 2%;
-    width: 372px;
-    height: 150px;
+    width: 341px;
+    height: 138px;
   }
 }
 @media (max-width: 992px) {
