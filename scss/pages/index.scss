@@ -62,20 +62,6 @@ main{
             }
 
         }
-        #bands__two{
-            display: flex;    
-            justify-content: space-evenly;
-        }
-        #bands__three{
-            display: flex;    
-            justify-content: space-evenly;
-            align-items: baseline;
-            @include mediaquery-tablet(){
-                align-items: center;
-                flex-direction: column;
-            }
-            
-        }
         img {
             max-width: 220px;
             &:hover{
@@ -150,80 +136,103 @@ main{
     
     }
 
-    .avisos{
-        background-color: $color-terciario;
-        width: 200px;
-        height: 200px;
-        left: 80%;
-        top: 60vh;
-        position: fixed;
-        opacity: 0.6;
-        border-radius: 25%;
-        display: flex;
+    .news{
+        width: 100vw;
+        display: flex; 
         flex-direction: column;
-        justify-content: center;
         align-items: center;
-        text-align: center;
-        color: white;
-        font-size: 180%;
-        z-index: 100;
-        .fechas{
-            display: none;
-        }
-        &:hover{
-            .fechas{
-                display: block;
-                font-size: 60%;
-                text-align: center;
+        margin-top: 5%;
+        
+
+        .title__news{
+            background-color: $color-terciario;
+            width: 80%;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: $color-secundario;
+            font-size: 250%;
+            @include mediaquery-tablet(){
+                width: 90%;
+                font-size: 150%;
             }
-            width: auto;
-            height: auto;
-            padding: 2%;
-            left: 67%;
-            top: 30vh;
         }
-        #comprar__fechas{
-            color: $color-cuaternario;
-            margin-top: 15%;
+        .news__content{
+            background-color: $color-secundario;
+            width: 80%;
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            color: white;
             font-size: 150%;
+            #news__band{
+                color: $color-cuaternario;
+            }
+
+            @include mediaquery-tablet(){
+                width: 90%;
+                font-size: 80%;
+                height: 150px;
+            }
+        }
+        .news__send{
+            width: 80%;
+            background-color: $color-secundario;
+            height: 80px;
+            border-top: 3px solid white;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            .send__btn{
+                background-color: $color-terciario;
+                color: white;
+                border-radius: 20px;
+                width: 15%;
+                height: 50%;
+                margin-right: 3%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                &:hover{
+                    color: $color-terciario;
+                    background-color: white;
+                }
+                @include mediaquery-tablet(){
+                    width: 70%;
+                    margin: 0%;
+                }
+
+            }
+            @include mediaquery-tablet(){
+                width: 90%;
+                font-size: 80%;
+                height: 50px;
+                justify-content: center;
+                margin:0%;
+            }
         }
         
         
-        #fechas__title{
-            font-size: 150%;
-            color: $color-cuaternario;
-        }
-        @include mediaquery-tablet(){
-            display: none;
-        }
-    
     }
 
-
+    .video{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 5%;
+        width: 100vw;
+        height: 500px;
+        iframe{
+            width: 90%;
+        }
+        @include mediaquery-tablet(){
+            justify-content: center;
+            width: 100vw;
+            height: 200px;
+            margin-top: 5%;
+        }
+    }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
