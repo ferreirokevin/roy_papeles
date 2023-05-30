@@ -257,11 +257,6 @@ header .header__container .header__nav nav ul li .li__select:hover {
   margin-top: 2%;
   margin-left: 75%;
 }
-.contact .contact__box form input:hover {
-  color: #768cc2;
-  background-color: white;
-  cursor: pointer;
-}
 .contact .contact__box form input:active {
   color: white;
   background-color: lightgrey;
@@ -271,6 +266,11 @@ header .header__container .header__nav nav ul li .li__select:hover {
   color: white;
   border-radius: 20px;
   width: 25%;
+}
+.contact .contact__box form .contact__send:hover {
+  color: #768cc2;
+  background-color: white;
+  cursor: pointer;
 }
 .contact .contact__box form textarea {
   width: 100%;
@@ -563,7 +563,7 @@ main .news .news__content {
   font-size: 150%;
 }
 main .news .news__content #news__band {
-  color: #FFFF00;
+  color: #ffb12b;
 }
 @media (max-width: 992px) {
   main .news .news__content {
