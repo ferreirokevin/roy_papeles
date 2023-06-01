@@ -189,7 +189,6 @@
         &:hover{    
             transform: rotate(30deg);
             transition: all 0.5s ease;
-        
         }
         @include mediaquery-tablet(){
             max-width: 10vw;

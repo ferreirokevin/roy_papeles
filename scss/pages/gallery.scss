@@ -17,14 +17,12 @@
             @include mediaquery-tablet(){
                 height: 300px;
                 margin: 0%;
-            }
-            
+            }    
         }
         .carousel-control-prev{
             width: 10%;
             background-color: $color-terciario;
         }
-        
         .carousel-control-next{
             width: 10%;
             background-color: $color-terciario;
@@ -32,7 +30,6 @@
         @include mediaquery-tablet(){
             margin-top: 50px;
         }
-
     }
     #carouselExampleIndicators1{
         max-width: 80%;
@@ -49,14 +46,12 @@
             @include mediaquery-tablet(){
                 height: 300px;
                 margin: 0%;
-            }
-            
+            }    
         }
         .carousel-control-prev{
             width: 10%;
             background-color: $color-terciario;
         }
-        
         .carousel-control-next{
             width: 10%;
             background-color: $color-terciario;
@@ -67,7 +62,6 @@
             left: 9%;
             margin-top: 50px;
         }
-    
     }
     @include mediaquery-tablet(){
         min-height: 900px;

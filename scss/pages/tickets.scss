@@ -1,72 +1,54 @@
 .tickets__card{
-    width: 100%;
-    height: 25%;
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin-bottom: 15%;
-    margin-top: 10%;
-    .card{
-        width: 580px;
-        height: 235px;
-        background-image: url(../images/tickets.png);
-        background-size: cover;
+    justify-content: center;
+    .card__show{
         display: flex;
-        flex-direction: column;
+        align-items: center;
         justify-content: center;
-        align-items: center;   
-        text-align: center;
-        margin-top: 1%;
-        color: $color-secundario;
-        a{
-            background-color: $color-secundario;
-            color: white;
-            border-radius: 20px;
-            width: 25%;
-            text-align: center;
-            &:hover{
-                color: $color-secundario;
-                background-color: $color-terciario;
-            }
-            @include mediaquery-tablet(){
-                width: 50%;
-            }
+        margin: 3%;
+        img{
+            width: 100%;
         }
-        p{
-            &:first-child{
-                font-size: 150%;
-                font-weight: strong;
-            }
-            @include mediaquery-tablet(){
-                font-size: 50%;
-            }
-            &:first-child{
-                @include mediaquery-tablet(){
-                    font-size: 90%;
+        .card__content{
+            position: absolute;
+            text-align: center;
+            font-size: 120%;
+            P{ 
+                &:nth-child(2){
+                    font-size: 80%;
+                    font-family: "Poppins regular";
+                    @include mediaquery-mobile(){
+                        font-size: 10px;
+                    }
                 }
+
+            }      
+            a{
+                background-color: $color-secundario;
+                color: white;
+                border-radius: 20px;
+                text-align: center;
+                font-size: 15PX;
+                padding: 5%;
+                padding-top: 1%;
+                padding-bottom: 1%;
+                &:hover{
+                    color: $color-secundario;
+                    background-color: $color-terciario;
+                }
+                @include mediaquery-mobile(){
+                    font-size: 10px;
+                }
+            }
+            @include mediaquery-mobile(){
+                font-size: 20px;
             }
         }
         @include mediaquery-tablet(){
-            margin: 2%;
-            width: 341px;
-            height: 138px;
-        }
-        &:first-child{
-            @include mediaquery-tablet(){
-                top: 50%;
+            &:last-child{
+            margin-bottom: 30%;
             }
         }
-        
     }
-    @include mediaquery-tablet(){
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        height: auto;
-    }
-    
 }
-
-
-

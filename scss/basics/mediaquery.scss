@@ -8,7 +8,6 @@
         @content;
     }
 }
-
 @mixin mediaquery-landscape(){
     @media (max-width: 992px){
         @media only screen  and (orientation: landscape){    

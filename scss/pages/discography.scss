@@ -5,15 +5,17 @@
         margin-bottom: 60px;
     }
 }
-
 #discography__spotify{
     display: flex;
     flex-direction: row;    
     flex-wrap: wrap;
     justify-content: space-evenly;
-
     iframe{
         margin: 1%;
+        @include mediaquery-tablet(){
+            margin: 10%;
+            width: 90%;
+        }
     }
 }
 

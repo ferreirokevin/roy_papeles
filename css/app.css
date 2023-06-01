@@ -1,13 +1,80 @@
 @font-face {
-  font-family: "Poppins Semi Bold";
-  src: url(../fonts/Poppins/Poppins-SemiBold.ttf);
+  font-family: "Poppins regular";
+  src: url(../../fonts/Poppins/Poppins-Regular.ttf);
+}
+@font-face {
+  font-family: "Poppins Bold";
+  src: url(../../fonts/Poppins/Poppins-Bold.ttf);
 }
 * {
   font-family: "poppins", sans-serif;
   margin: 0;
   padding: 0;
   text-decoration: none !important;
-  font-family: "Poppins Semi Bold";
+  font-family: "Poppins Bold";
+}
+
+body {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 99px auto 300px;
+  grid-template-areas: "header" "main" "footer";
+  background-image: url(../images/vista-papel-arrugado-blanco.jpg);
+  background-size: cover;
+}
+
+h1 {
+  font-size: 4vw;
+  margin-top: -40%;
+  margin-left: 5%;
+  color: white;
+}
+@media (max-width: 992px) {
+  h1 {
+    font-size: 7vw;
+    color: white;
+    margin: 0%;
+    z-index: 1;
+  }
+}
+
+h2 {
+  font-size: 60px;
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  color: black !important;
+}
+
+h3 {
+  font-weight: bold;
+  color: black;
+}
+@media (max-width: 992px) {
+  h3 {
+    font-size: 100%;
+  }
+}
+
+h4 {
+  color: grey;
+}
+@media (max-width: 992px) {
+  h4 {
+    font-size: 80%;
+  }
+}
+
+h5 {
+  font-size: 155%;
+}
+
+h6 {
+  font-size: 60px;
+  display: flex;
+  justify-content: center;
+  color: white;
 }
 
 footer {
@@ -249,6 +316,7 @@ header .header__container .header__nav nav ul li .li__select:hover {
   width: 100%;
   height: 5%;
   border: 0;
+  padding: 2%;
 }
 .contact .contact__box form input:last-child {
   width: 25%;
@@ -266,6 +334,7 @@ header .header__container .header__nav nav ul li .li__select:hover {
   color: white;
   border-radius: 20px;
   width: 25%;
+  padding: 0%;
 }
 .contact .contact__box form .contact__send:hover {
   color: #768cc2;
@@ -275,6 +344,7 @@ header .header__container .header__nav nav ul li .li__select:hover {
 .contact .contact__box form textarea {
   width: 100%;
   height: 45vh;
+  padding: 2%;
 }
 @media (max-width: 992px) {
   .contact .contact__box form textarea {
@@ -303,6 +373,12 @@ header .header__container .header__nav nav ul li .li__select:hover {
 }
 #discography__spotify iframe {
   margin: 1%;
+}
+@media (max-width: 992px) {
+  #discography__spotify iframe {
+    margin: 10%;
+    width: 90%;
+  }
 }
 
 .main__gallery {
@@ -507,17 +583,20 @@ main .about__me #about__title p {
     font-size: 200%;
   }
 }
+main .about__me #about__text {
+  font-size: 155%;
+}
 main .about__me #about__text p {
-  font-size: 200%;
+  font-family: "Poppins regular";
 }
 @media (max-width: 992px) {
   main .about__me #about__text p {
-    font-size: 200%;
+    font-size: 100%;
   }
 }
 @media (max-width: 767px) {
   main .about__me #about__text p {
-    font-size: 100%;
+    font-size: 60%;
   }
 }
 @media (max-width: 992px) {
@@ -571,6 +650,9 @@ main .news .news__content #news__band {
     font-size: 80%;
     height: 150px;
   }
+}
+main .news .news__content p {
+  font-family: "Poppins regular";
 }
 main .news .news__send {
   width: 80%;
@@ -866,140 +948,61 @@ main .video iframe {
 }
 
 .tickets__card {
-  width: 100%;
-  height: 25%;
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-evenly;
-  margin-bottom: 15%;
-  margin-top: 10%;
-}
-.tickets__card .card {
-  width: 580px;
-  height: 235px;
-  background-image: url(../images/tickets.png);
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin-top: 1%;
-  color: #181a14;
 }
-.tickets__card .card a {
+.tickets__card .card__show {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 3%;
+}
+.tickets__card .card__show img {
+  width: 100%;
+}
+.tickets__card .card__show .card__content {
+  position: absolute;
+  text-align: center;
+  font-size: 120%;
+}
+.tickets__card .card__show .card__content P:nth-child(2) {
+  font-size: 80%;
+  font-family: "Poppins regular";
+}
+@media (max-width: 767px) {
+  .tickets__card .card__show .card__content P:nth-child(2) {
+    font-size: 10px;
+  }
+}
+.tickets__card .card__show .card__content a {
   background-color: #181a14;
   color: white;
   border-radius: 20px;
-  width: 25%;
   text-align: center;
+  font-size: 15PX;
+  padding: 5%;
+  padding-top: 1%;
+  padding-bottom: 1%;
 }
-.tickets__card .card a:hover {
+.tickets__card .card__show .card__content a:hover {
   color: #181a14;
   background-color: #768cc2;
 }
-@media (max-width: 992px) {
-  .tickets__card .card a {
-    width: 50%;
+@media (max-width: 767px) {
+  .tickets__card .card__show .card__content a {
+    font-size: 10px;
   }
 }
-.tickets__card .card p:first-child {
-  font-size: 150%;
-  font-weight: strong;
-}
-@media (max-width: 992px) {
-  .tickets__card .card p {
-    font-size: 50%;
+@media (max-width: 767px) {
+  .tickets__card .card__show .card__content {
+    font-size: 20px;
   }
 }
 @media (max-width: 992px) {
-  .tickets__card .card p:first-child {
-    font-size: 90%;
+  .tickets__card .card__show:last-child {
+    margin-bottom: 30%;
   }
-}
-@media (max-width: 992px) {
-  .tickets__card .card {
-    margin: 2%;
-    width: 341px;
-    height: 138px;
-  }
-}
-@media (max-width: 992px) {
-  .tickets__card .card:first-child {
-    top: 50%;
-  }
-}
-@media (max-width: 992px) {
-  .tickets__card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: auto;
-  }
-}
-
-body {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 99px auto 300px;
-  grid-template-areas: "header" "main" "footer";
-  background-image: url(../images/vista-papel-arrugado-blanco.jpg);
-  background-size: cover;
-}
-
-h1 {
-  font-size: 4vw;
-  margin-top: -40%;
-  margin-left: 5%;
-  color: white;
-}
-@media (max-width: 992px) {
-  h1 {
-    font-size: 7vw;
-    color: white;
-    margin: 0%;
-    z-index: 1;
-  }
-}
-
-h2 {
-  font-size: 60px;
-  display: flex;
-  justify-content: center;
-  margin-top: 5%;
-  margin-bottom: 5%;
-  color: black !important;
-}
-
-h3 {
-  font-weight: bold;
-  color: black;
-}
-@media (max-width: 992px) {
-  h3 {
-    font-size: 100%;
-  }
-}
-
-h4 {
-  color: grey;
-}
-@media (max-width: 992px) {
-  h4 {
-    font-size: 80%;
-  }
-}
-
-h5 {
-  font-size: 155%;
-}
-
-h6 {
-  font-size: 60px;
-  display: flex;
-  justify-content: center;
-  color: white;
 }
 
 /*# sourceMappingURL=app.css.map */

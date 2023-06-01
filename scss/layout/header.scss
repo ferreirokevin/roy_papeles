@@ -7,7 +7,6 @@ header{
     z-index: 5000; 
     background-color: $color-primario;
     grid-area: header;
-
     .header__container{
         max-width: 1500px;
         height: 100%;
@@ -28,9 +27,7 @@ header{
                     filter: grayscale(100%);
                     
                 }
-            }
-            
-            
+            } 
         }
         .menu{
             display: none;
@@ -47,7 +44,6 @@ header{
                     height: 50%;
                 }
             }
-            
         }
         .input__menu{
             display: none;
@@ -111,10 +107,8 @@ header{
                         @include mediaquery-landscape(){
                             margin-top: 2px;
                             margin-bottom: 2px;
-                        }   
-                                 
-                    }   
-                    
+                        }       
+                    }
                     @include mediaquery-tablet(){
                         display: flex;
                         flex-direction: column;        
@@ -132,7 +126,6 @@ header{
                     }       
                 }
             }
-            
             @include mediaquery-tablet(){
                 display: none;
                 background-color: $color-terciario;

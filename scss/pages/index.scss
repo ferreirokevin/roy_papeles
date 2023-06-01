@@ -4,8 +4,6 @@ main{
         width: 100%;
         padding-bottom: 0px;
         margin-top: 0px;
-    
-    
         .front__img {
             img{
                 max-width: 100%;
@@ -16,7 +14,6 @@ main{
                 }
             }
         }
-        
         .front__logo{
             display: flex;
             flex-direction: column-reverse;
@@ -42,7 +39,6 @@ main{
             }
              
         }
-    
     }
     #bands{
         margin-top: 5%;
@@ -60,13 +56,12 @@ main{
                 flex-direction: column;
                 margin-top: 25%;
             }
-
         }
         img {
             max-width: 220px;
             &:hover{
                 transform: rotate(30deg);
-                    transition: all 0.5s ease;
+                transition: all 0.5s ease;
             }
             @include mediaquery-tablet(){
                 max-width: 300px;
@@ -91,7 +86,6 @@ main{
             justify-content: center;
             text-align: center;
         }
-
     }
     .about__me{
         background-color: $color-terciario;
@@ -115,25 +109,22 @@ main{
             }
         }
         #about__text{
-            p{
-                font-size: 200%;
+            font-size: 155%;
+            p{  
+                font-family: "Poppins regular";
                 @include mediaquery-tablet(){
-                    font-size: 200%;
-                }
-                @include mediaquery-mobile(){
                     font-size: 100%;
                 }
-            }
-            
+                @include mediaquery-mobile(){
+                    font-size: 60%;
+                }
+            }    
         }
-        
         @include mediaquery-tablet(){
             margin: 0%;
             margin-top: -20%;
             padding: 30px;
         }
-        
-    
     }
 
     .news{
@@ -142,8 +133,6 @@ main{
         flex-direction: column;
         align-items: center;
         margin-top: 5%;
-        
-
         .title__news{
             background-color: $color-terciario;
             width: 80%;
@@ -172,11 +161,13 @@ main{
             #news__band{
                 color: $color-cuaternario;
             }
-
             @include mediaquery-tablet(){
                 width: 90%;
                 font-size: 80%;
                 height: 150px;
+            }
+            p{
+                font-family: "Poppins regular";
             }
         }
         .news__send{
@@ -205,7 +196,6 @@ main{
                     width: 70%;
                     margin: 0%;
                 }
-
             }
             @include mediaquery-tablet(){
                 width: 90%;
@@ -214,11 +204,8 @@ main{
                 justify-content: center;
                 margin:0%;
             }
-        }
-        
-        
+        }    
     }
-
     .video{
         display: flex;
         justify-content: center;

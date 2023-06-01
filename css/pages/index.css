@@ -1,12 +1,12 @@
 /* Error: Undefined mixin.
  *    ,
- * 12 | /                 @include mediaquery-tablet(){
- * 13 | |                     margin-left: -100%;
- * 14 | |                     max-width: 200%;
- * 15 | |                     filter: brightness(0.5);
- * 16 | \                 }
+ * 10 | /                 @include mediaquery-tablet(){
+ * 11 | |                     margin-left: -100%;
+ * 12 | |                     max-width: 200%;
+ * 13 | |                     filter: brightness(0.5);
+ * 14 | \                 }
  *    '
- *   scss\pages\index.scss 12:17  root stylesheet */
+ *   scss\pages\index.scss 10:17  root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -16,5 +16,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: Undefined mixin.\a    \2577 \a 12 \2502  \250c                  @include mediaquery-tablet(){\a 13 \2502  \2502                      margin-left: -100%;\a 14 \2502  \2502                      max-width: 200%;\a 15 \2502  \2502                      filter: brightness(0.5);\a 16 \2502  \2514                  }\a    \2575 \a   scss\\pages\\index.scss 12:17  root stylesheet";
+  content: "Error: Undefined mixin.\a    \2577 \a 10 \2502  \250c                  @include mediaquery-tablet(){\a 11 \2502  \2502                      margin-left: -100%;\a 12 \2502  \2502                      max-width: 200%;\a 13 \2502  \2502                      filter: brightness(0.5);\a 14 \2502  \2514                  }\a    \2575 \a   scss\\pages\\index.scss 10:17  root stylesheet";
 }
