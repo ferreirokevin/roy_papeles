@@ -7,12 +7,13 @@
     src: url(../fonts/Poppins/Poppins-Bold.ttf);
 }
 *{
-    font-family: "Poppins", sans-serif;
+    font-family: "Poppins Bold", sans-serif;
     margin: 0;
     padding: 0;
     text-decoration: none !important;
 }
 body{
+    width: 100vw;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 99px auto 300px;
@@ -23,6 +24,9 @@ body{
     ;
     background-image: url(../images/vista-papel-arrugado-blanco.jpg);
     background-size: cover;
+}
+main{
+    grid-area: header;
 }
 h1{
     font-size: 4vw;

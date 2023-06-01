@@ -7,19 +7,24 @@
   src: url(../fonts/Poppins/Poppins-Bold.ttf);
 }
 * {
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins Bold", sans-serif;
   margin: 0;
   padding: 0;
   text-decoration: none !important;
 }
 
 body {
+  width: 100vw;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 99px auto 300px;
   grid-template-areas: "header" "main" "footer";
   background-image: url(../images/vista-papel-arrugado-blanco.jpg);
   background-size: cover;
+}
+
+main {
+  grid-area: header;
 }
 
 h1 {
@@ -145,7 +150,7 @@ header .header__container .menu {
   display: none;
   position: absolute;
   top: 19px;
-  left: 40%;
+  right: 5%;
   z-index: 1000;
 }
 @media (max-width: 992px) {
