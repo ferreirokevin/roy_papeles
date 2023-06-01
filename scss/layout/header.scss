@@ -33,7 +33,7 @@ header{
             display: none;
             position: absolute;
             top: 19px;
-            left: 45%;
+            left: 40%;
             z-index: 1000;
             @include mediaquery-tablet(){
                 width: 200px;
@@ -135,7 +135,7 @@ header{
                 background-color: $color-terciario;
                 margin-top: 99px;
                 margin-right: -2%;
-                width: 60%;
+                width: 80%;
                 height: 1000px;
 
             }
