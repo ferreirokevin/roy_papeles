@@ -31,6 +31,10 @@ header{
         }
         .menu{
             display: none;
+            position: absolute;
+            top: 19px;
+            left: 45%;
+            z-index: 1000;
             @include mediaquery-tablet(){
                 width: 200px;
                 appearance: none;
@@ -41,7 +45,7 @@ header{
             img{
                 @include mediaquery-tablet(){
                     width: 90%;
-                    height: 50%;
+                    height: 50%;   
                 }
             }
         }
@@ -121,7 +125,7 @@ header{
                         padding: 0%;
                     } 
                     @include mediaquery-mobile(){
-                        margin-left: -6%;
+                        margin-left: -5;
                         height: auto;
                     }       
                 }
@@ -129,7 +133,7 @@ header{
             @include mediaquery-tablet(){
                 display: none;
                 background-color: $color-terciario;
-                margin-top: 0px;
+                margin-top: 99px;
                 margin-right: -2%;
                 width: 60%;
                 height: 1000px;

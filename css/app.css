@@ -144,6 +144,10 @@ header .header__container .header__logo a:hover {
 }
 header .header__container .menu {
   display: none;
+  position: absolute;
+  top: 19px;
+  left: 45%;
+  z-index: 1000;
 }
 @media (max-width: 992px) {
   header .header__container .menu {
@@ -254,7 +258,7 @@ header .header__container .header__nav nav ul li .li__select:hover {
 }
 @media (max-width: 767px) {
   header .header__container .header__nav nav ul {
-    margin-left: -6%;
+    margin-left: -5;
     height: auto;
   }
 }
@@ -262,7 +266,7 @@ header .header__container .header__nav nav ul li .li__select:hover {
   header .header__container .header__nav {
     display: none;
     background-color: #768cc2;
-    margin-top: 0px;
+    margin-top: 99px;
     margin-right: -2%;
     width: 60%;
     height: 1000px;
