@@ -141,7 +141,7 @@ header .header__container .header__logo {
   align-items: center;
 }
 header .header__container .header__logo a img {
-  width: 75px;
+  width: 70px;
 }
 header .header__container .header__logo a:hover {
   filter: grayscale(100%);
