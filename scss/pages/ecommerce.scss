@@ -1,0 +1,53 @@
+.tarjet__contenedor{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2%;
+    .tarjet{
+        width: 200px;
+        height: auto;
+        background-color: $color-terciario;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        padding: 1%;
+        border-radius: 30px;
+        margin: 1%;
+        img{
+            max-width: 100%;
+            border-radius: 30px;
+        }
+        .title{
+            font-size: 150%;
+            color: $color-primario;
+        }
+        .description{
+            font-size: 80%;
+            color: $color-secundario;
+        }
+        .price{
+            display: flex;
+            justify-content: end;
+            color: $color-cuaternario;
+        }
+        input{
+            width: 25%;
+        }
+        button{
+            background-color: $color-cuaternario;
+            padding: 5% 10%;
+            color: white;
+            border-radius: 30px;
+            border: none;
+            width: 70%;
+            margin-left: 3%;
+            
+        }
+        @include mediaquery-tablet(){
+            padding: 5%;
+        }
+    }
+}

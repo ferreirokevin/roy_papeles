@@ -82,6 +82,17 @@ header{
                             @include mediaquery-tablet(){
                                 font-size: 25px;
                             }
+                            
+                        }
+                        #header__tienda{
+                            background-color: $color-cuaternario;
+                            padding: 10px 30px;
+                            color: white;
+                            border-radius: 20px;
+                            &:hover{
+                                color: $color-terciario;
+                                background-color: white;
+                            }  
                         }
                         .li__select{
                             background-color: $color-terciario;
@@ -98,7 +109,7 @@ header{
                         }
                         &:first-child{
                             @include mediaquery-tablet(){
-                                margin-top: 40%;
+                                margin-top: 10%;
                             }
                             @include mediaquery-landscape(){
                                 margin-top: 15%;

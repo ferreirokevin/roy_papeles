@@ -10,6 +10,7 @@ main{
                 @include mediaquery-tablet(){
                     margin-left: -100%;
                     max-width: 200%;
+                    height: auto;
                     filter: brightness(0.5);
                 }
             }

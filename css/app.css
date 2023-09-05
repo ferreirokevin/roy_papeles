@@ -210,6 +210,16 @@ header .header__container .header__nav nav ul li a:hover {
     font-size: 25px;
   }
 }
+header .header__container .header__nav nav ul li #header__tienda {
+  background-color: #ffb12b;
+  padding: 10px 30px;
+  color: white;
+  border-radius: 20px;
+}
+header .header__container .header__nav nav ul li #header__tienda:hover {
+  color: #768cc2;
+  background-color: white;
+}
 header .header__container .header__nav nav ul li .li__select {
   background-color: #768cc2;
   padding: 10px 30px;
@@ -227,7 +237,7 @@ header .header__container .header__nav nav ul li .li__select:hover {
 }
 @media (max-width: 992px) {
   header .header__container .header__nav nav ul li:first-child {
-    margin-top: 40%;
+    margin-top: 10%;
   }
 }
 @media only screen and (max-width: 992px) and (orientation: landscape) {
@@ -484,6 +494,7 @@ main .front__page .front__img img {
   main .front__page .front__img img {
     margin-left: -100%;
     max-width: 200%;
+    height: auto;
     filter: brightness(0.5);
   }
 }
@@ -1010,6 +1021,61 @@ main .video iframe {
 @media (max-width: 992px) {
   .tickets__card .card__show:last-child {
     margin-bottom: 30%;
+  }
+}
+
+.tarjet__contenedor {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2%;
+}
+.tarjet__contenedor .tarjet {
+  width: 200px;
+  height: auto;
+  background-color: #768cc2;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 1%;
+  border-radius: 30px;
+  margin: 1%;
+}
+.tarjet__contenedor .tarjet img {
+  max-width: 100%;
+  border-radius: 30px;
+}
+.tarjet__contenedor .tarjet .title {
+  font-size: 150%;
+  color: #000;
+}
+.tarjet__contenedor .tarjet .description {
+  font-size: 80%;
+  color: #181a14;
+}
+.tarjet__contenedor .tarjet .price {
+  display: flex;
+  justify-content: end;
+  color: #ffb12b;
+}
+.tarjet__contenedor .tarjet input {
+  width: 25%;
+}
+.tarjet__contenedor .tarjet button {
+  background-color: #ffb12b;
+  padding: 5% 10%;
+  color: white;
+  border-radius: 30px;
+  border: none;
+  width: 70%;
+  margin-left: 3%;
+}
+@media (max-width: 992px) {
+  .tarjet__contenedor .tarjet {
+    padding: 5%;
   }
 }
 
