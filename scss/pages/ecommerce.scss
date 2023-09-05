@@ -1,12 +1,12 @@
 .tarjet__contenedor{
-    width: 100%;
+    width: 100vw;
     height: auto;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 2%;
     .tarjet{
+        top: 10%;
         width: 200px;
         height: auto;
         background-color: $color-terciario;

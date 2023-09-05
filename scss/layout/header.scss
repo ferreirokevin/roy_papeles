@@ -1,9 +1,10 @@
 header{
-    width: 100%;
+    width: 100vw;
     height: 99px;
     position: fixed;
     top: 0;
     right: 0;
+    left: 0;
     z-index: 5000; 
     background-color: $color-primario;
     grid-area: header;

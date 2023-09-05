@@ -117,11 +117,12 @@ footer p {
 }
 
 header {
-  width: 100%;
+  width: 100vw;
   height: 99px;
   position: fixed;
   top: 0;
   right: 0;
+  left: 0;
   z-index: 5000;
   background-color: #000;
   grid-area: header;
@@ -1025,15 +1026,15 @@ main .video iframe {
 }
 
 .tarjet__contenedor {
-  width: 100%;
+  width: 100vw;
   height: auto;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 2%;
 }
 .tarjet__contenedor .tarjet {
+  top: 10%;
   width: 200px;
   height: auto;
   background-color: #768cc2;
