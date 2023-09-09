@@ -12,12 +12,11 @@ formularioIngreso.addEventListener("submit", function(event){
   const usuarios = JSON.parse(todosLosUsuarios);
   const usuarioActivo = usuarios.find(usuario => 
     usuario.email === emailIngreso.value && usuario.contraseña === contraseñaIngreso.value) 
-    console.log(usuarioActivo)
-    
   
   if (usuarioActivo !== undefined) {
     limpiarmensaje()
     mensajeIngreso.textContent = "Bienvenido";
+    borrarBotones()
   } else {
     limpiarmensaje()
     mensajeError.textContent = "Credenciales incorrectas";
@@ -36,12 +35,6 @@ function limpiarFormularioIngreso() {
   emailIngreso.value = "";
   contraseñaIngreso.value = "";
 }
-
-function guardarUsuario(usuarioActivo){  
-  localStorage.setItem("usuarioActivo", usuarioActivo)
-  borrarBotones()
-}
-
 function borrarBotones(){
   const registrarse = document.getElementById("registrarse")
   const iniciar__sesion = document.getElementById("iniciar__sesion")

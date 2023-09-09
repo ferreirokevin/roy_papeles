@@ -1257,6 +1257,7 @@ main .video iframe {
 }
 
 #carrito {
+  position: fixed;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1270,6 +1271,11 @@ main .video iframe {
   height: auto;
   margin-left: 80%;
 }
+@media (max-width: 992px) {
+  #carrito {
+    margin-left: 65%;
+  }
+}
 
 #ventanaCarrito {
   position: fixed;
@@ -1281,7 +1287,16 @@ main .video iframe {
   display: flex;
   flex-direction: column;
   border-radius: 30px;
-  margin-left: 70%;
+  margin-left: 67.5%;
+  top: 27.5%;
+}
+@media (max-width: 992px) {
+  #ventanaCarrito {
+    margin-left: 4%;
+    width: 80%;
+    padding: 5%;
+    top: 40%;
+  }
 }
 #ventanaCarrito #productoCarrito {
   display: flex;
