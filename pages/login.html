@@ -4,9 +4,9 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Roy Papeles, canta autor, banda de rock nacional sin querer queriendo">
-        <meta name="description" content="contactate con roy papeles">
+        <meta name="description" content="mira las redes de todas las bandas de rock nacional de roy papeles">
         <meta name="keywords" content="roy papeles, rock nacional, sin querer queriendo, sqq, la ricky band, waldemar salas, canta autor, musico">
-        <title>Contacto - Roy Papeles</title>
+        <title>Redes - Roy Papeles</title>
         <link rel="shortcut icon" href="../images/logo_blue.png">
         <link rel="stylesheet" href="../css/app.css">
     </head>
@@ -26,8 +26,8 @@
                     <nav>
                         <ul>
                             <li class="buttons">
-                                <a href="./login.html" class="iniciar__sesion" id="sesionIniciada1">INICIAR SESIÓN</a>
-                                <a href="./check in.html" class="registrarse" id="sesionIniciada2">REGISTRASE</a>
+                                <a href="./login.html" class="iniciar__sesion" id="iniciar__sesion">INICIAR SESIÓN</a>
+                                <a href="./check in.html" class="registrarse" id="registrarse">REGISTRASE</a>
                             </li>
                             <li><a href="../index.html">INICIO</a></li>
                             <li><a href="../pages/social_networks.html">REDES</a></li>
@@ -41,23 +41,18 @@
                 </div>
             </div>
         </header>
-        <main>
-            <div>
-                <h2>Contacto</h2>
-                <div class="contact">
-                    <img src="../images/roy_envuelto_en_bandera.jpg" alt="">
-                    <div class="contact__box">
-                        <form>
-                            <h5>Nombre y Apellido</h5>
-                            <input type="text" >
-                            <h5>Email</h5>
-                            <input type="text" >
-                            <h5>Contenido</h5>                            
-                            <textarea name="" id="" cols="30" rows="10" ></textarea>        
-                            <input class="contact__send" type="submit" value="ENVIAR">                            
-                        </form>                                                
-                    </div>
-                </div>
+        <main class="main__login">
+            <h2>INICIAR SESIÓN</h2>
+            <div class="iniciarSesion__box">
+                <form id="formularioIngreso">
+                    <h5>Email</h5>
+                    <input type="text" id="emailIngreso">
+                    <h5>CONTRASEÑA</h5>
+                    <input type="password" id="contraseñaIngreso">       
+                    <input class="contact__send" type="submit" value="INICIAR SESIÓN">                            
+                </form>
+                <div id="mensajeError" style="color: red;"></div>
+                <div id="mensajeIngreso" style="color: green;"></div>                                           
             </div>
         </main>
         <footer>

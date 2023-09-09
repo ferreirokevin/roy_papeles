@@ -195,6 +195,31 @@ header .header__container .header__nav nav ul {
   justify-content: center;
   align-items: center;
 }
+header .header__container .header__nav nav ul #botonesActivos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: 99px;
+  margin-left: -55px;
+}
+header .header__container .header__nav nav ul #botonesActivos li {
+  background-color: #ffb12b;
+  padding: 2px 10px;
+  color: #000;
+  border-radius: 20px;
+  height: 100%;
+  border: none;
+  font-size: 70%;
+  text-align: center;
+}
+header .header__container .header__nav nav ul #botonesActivos li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
 header .header__container .header__nav nav ul li {
   margin: 40px;
   list-style: none;
@@ -248,7 +273,7 @@ header .header__container .header__nav nav ul li .li__select:hover {
 }
 @media (max-width: 992px) {
   header .header__container .header__nav nav ul li {
-    margin-top: 15px;
+    margin-top: 10px;
     margin-bottom: 15px;
   }
 }
@@ -257,6 +282,45 @@ header .header__container .header__nav nav ul li .li__select:hover {
     margin-top: 2px;
     margin-bottom: 2px;
   }
+}
+header .header__container .header__nav nav ul .buttons {
+  width: 100%;
+}
+@media (max-width: 992px) {
+  header .header__container .header__nav nav ul .buttons {
+    display: flex;
+  }
+}
+header .header__container .header__nav nav ul .buttons .iniciar__Sesion {
+  background-color: #ffb12b;
+  padding: 2px 10px;
+  color: #000;
+  border-radius: 20px;
+  border: none;
+  font-size: 70%;
+  cursor: pointer;
+}
+header .header__container .header__nav nav ul .buttons .iniciar__Sesion:hover {
+  color: #000;
+  background-color: white;
+}
+@media (max-width: 992px) {
+  header .header__container .header__nav nav ul .buttons .iniciar__Sesion {
+    margin-right: 10%;
+  }
+}
+header .header__container .header__nav nav ul .buttons .registrarse {
+  background-color: #ffb12b;
+  padding: 2px 10px;
+  color: #000;
+  border-radius: 20px;
+  border: none;
+  font-size: 70%;
+  cursor: pointer;
+}
+header .header__container .header__nav nav ul .buttons .registrarse:hover {
+  color: #000;
+  background-color: white;
 }
 @media (max-width: 992px) {
   header .header__container .header__nav nav ul {
@@ -300,6 +364,120 @@ header .header__container .header__nav nav ul li .li__select:hover {
 @media only screen and (max-width: 992px) and (orientation: landscape) {
   header {
     position: relative;
+  }
+}
+
+.main__checkin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.main__checkin h2 {
+  font-size: 45px;
+}
+.main__checkin .registrarse__box {
+  display: flex;
+  justify-content: center;
+  width: 30%;
+  padding: 5%;
+  height: auto;
+  margin-bottom: 15%;
+  background-color: #181a14;
+}
+.main__checkin .registrarse__box h5 {
+  color: white;
+}
+.main__checkin .registrarse__box input {
+  width: 100%;
+  height: 8%;
+  border: 0;
+  padding: 5%;
+}
+.main__checkin .registrarse__box input:last-child {
+  width: 55%;
+  height: 10%;
+  border: 0;
+  margin-top: 12%;
+  margin-left: 45%;
+}
+.main__checkin .registrarse__box input:active {
+  color: white;
+  background-color: lightgrey;
+}
+.main__checkin .registrarse__box .contact__send {
+  background-color: #768cc2;
+  color: white;
+  border-radius: 20px;
+  width: 50%;
+  padding: 0%;
+  margin-top: 5%;
+  margin-left: 50%;
+}
+.main__checkin .registrarse__box .contact__send:hover {
+  color: #768cc2;
+  background-color: white;
+  cursor: pointer;
+}
+@media (max-width: 992px) {
+  .main__checkin .registrarse__box {
+    width: 80%;
+  }
+}
+
+.main__login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.main__login h2 {
+  font-size: 45px;
+}
+.main__login .iniciarSesion__box {
+  display: flex;
+  justify-content: center;
+  width: 30%;
+  padding: 5%;
+  height: auto;
+  margin-bottom: 15%;
+  background-color: #181a14;
+}
+.main__login .iniciarSesion__box h5 {
+  color: white;
+}
+.main__login .iniciarSesion__box input {
+  width: 100%;
+  height: 15%;
+  border: 0;
+  padding: 5%;
+}
+.main__login .iniciarSesion__box input:last-child {
+  width: 55%;
+  height: 15%;
+  border: 0;
+  margin-top: 12%;
+  margin-left: 45%;
+}
+.main__login .iniciarSesion__box input:active {
+  color: white;
+  background-color: lightgrey;
+}
+.main__login .iniciarSesion__box .contact__send {
+  background-color: #768cc2;
+  color: white;
+  border-radius: 20px;
+  width: 25%;
+  padding: 0%;
+}
+.main__login .iniciarSesion__box .contact__send:hover {
+  color: #768cc2;
+  background-color: white;
+  cursor: pointer;
+}
+@media (max-width: 992px) {
+  .main__login .iniciarSesion__box {
+    width: 80%;
   }
 }
 
@@ -1025,7 +1203,7 @@ main .video iframe {
   }
 }
 
-.tarjet__contenedor {
+#tarjet__contenedor {
   width: 100vw;
   height: auto;
   display: flex;
@@ -1033,7 +1211,7 @@ main .video iframe {
   flex-wrap: wrap;
   justify-content: center;
 }
-.tarjet__contenedor .tarjet {
+#tarjet__contenedor #tarjet {
   top: 10%;
   width: 200px;
   height: auto;
@@ -1045,27 +1223,24 @@ main .video iframe {
   border-radius: 30px;
   margin: 1%;
 }
-.tarjet__contenedor .tarjet img {
+#tarjet__contenedor #tarjet img {
   max-width: 100%;
   border-radius: 30px;
 }
-.tarjet__contenedor .tarjet .title {
+#tarjet__contenedor #tarjet #title {
   font-size: 150%;
   color: #000;
 }
-.tarjet__contenedor .tarjet .description {
+#tarjet__contenedor #tarjet #description {
   font-size: 80%;
   color: #181a14;
 }
-.tarjet__contenedor .tarjet .price {
+#tarjet__contenedor #tarjet #price {
   display: flex;
   justify-content: end;
   color: #ffb12b;
 }
-.tarjet__contenedor .tarjet input {
-  width: 25%;
-}
-.tarjet__contenedor .tarjet button {
+#tarjet__contenedor #tarjet button {
   background-color: #ffb12b;
   padding: 5% 10%;
   color: white;
@@ -1073,11 +1248,60 @@ main .video iframe {
   border: none;
   width: 70%;
   margin-left: 3%;
+  cursor: pointer;
 }
 @media (max-width: 992px) {
-  .tarjet__contenedor .tarjet {
+  #tarjet__contenedor #tarjet {
     padding: 5%;
   }
+}
+
+#carrito {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+  background-color: #ffb12b;
+  padding: 15px 40px;
+  color: white;
+  border-radius: 30px;
+  border: none;
+  width: 5%;
+  height: auto;
+  margin-left: 80%;
+}
+
+#ventanaCarrito {
+  position: fixed;
+  background-color: #ffb12b;
+  width: 20%;
+  height: auto;
+  padding: 1%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  border-radius: 30px;
+  margin-left: 70%;
+}
+#ventanaCarrito #productoCarrito {
+  display: flex;
+  flex-direction: column;
+}
+#ventanaCarrito #productoCarrito div {
+  display: flex;
+}
+#ventanaCarrito #productoCarrito div p:last-child {
+  margin-left: 20%;
+}
+#ventanaCarrito a {
+  background-color: #768cc2;
+  padding: 1% 5%;
+  color: white;
+  border-radius: 30px;
+  border: none;
+  width: 70%;
+  margin-left: 3%;
+  text-align: center;
 }
 
 /*# sourceMappingURL=app.css.map */

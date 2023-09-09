@@ -1,0 +1,56 @@
+.main__checkin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h2{
+        font-size: 45px;
+    }
+    .registrarse__box {
+            display: flex;
+            justify-content: center;
+            width: 30%;
+            padding: 5%;
+            height: auto;
+            margin-bottom: 15%;
+            background-color: $color_secundario;
+            h5 {
+                color: white;
+            }
+
+            input {
+                width: 100%;
+                height: 8%;
+                border: 0;
+                padding: 5%;
+                &:last-child {
+                    width: 55%;
+                    height: 10%;
+                    border: 0;
+                    margin-top: 12%;
+                    margin-left: 45%;
+                }
+                &:active {
+                        color: white;
+                        background-color: lightgrey;
+                    }
+            }
+            .contact__send {
+                background-color: $color-terciario;
+                color: white;
+                border-radius: 20px;
+                width: 50%;
+                padding: 0%;
+                margin-top: 5%;
+                margin-left: 50%;
+                &:hover {
+                    color: $color-terciario;
+                    background-color: white;
+                    cursor: pointer;
+                }
+            }
+            @include mediaquery-tablet(){
+                width: 80%;
+            }
+    }
+}

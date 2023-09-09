@@ -25,6 +25,10 @@
                 <div class="header__nav">
                     <nav>
                         <ul>
+                            <li class="buttons">
+                                <a href="./login.html" class="iniciar__sesion" id="sesionIniciada1">INICIAR SESIÓN</a>
+                                <a href="./check in.html" class="registrarse" id="sesionIniciada2">REGISTRASE</a>
+                            </li>
                             <li><a href="../index.html">INICIO</a></li>
                             <li><a href="../pages/social_networks.html">REDES</a></li>
                             <li><a href="../pages/discography.html">DISCOGRAFIA</a></li>
@@ -38,33 +42,54 @@
             </div>
         </header>
         <main>
+            <a href="#" id="carrito">CARRITO</a>
+            <div id="ventanaCarrito" style="display: none;">
+                <div id="productoCarrito">
+                </div>
+                <div id="totalCarrito">
+                    <p id="total"></p>
+                </div>  
+                <a href="#" id="comprar">Comprar</a>
+            </div>
             <h2>TIENDA</h2>
-            <div class="tarjet__contenedor">
-
-                <div class="tarjet">
+            <div id="tarjet__contenedor">
+                <div id="tarjet">
                     <img src="../images/remera.png" alt="">
                     <div>
-                        <p class="title">Remera SQQ</p>
-                        <p class="description"> remera naranja</p>
-                        <p class="price">$5,000</p>
+                        <p id="title" class="titleProduct">remera SQQ</p>
+                        <p id="description">remera naranja</p>
+                        <p>$</p>
+                        <p id="price" class="preciosProductos">5000</p>
                         <div>
-                            <input type="number" id="quantity" name="quantity" min="0" value="0">
-                            <button type="button" id="add-to-cart">Agregar</button>
+                            <button type="button" class="add_tocart">Agregar</button>
                         </div>
                     </div>
                 </div>
-                <div class="tarjet">
-                    <img src="../images/whatsapp-image-2021-07-21-at-4-18-06-pm1-ab581b951954cce57616268957389409-480-0.jpeg" alt="">
+                <div id="tarjet">
+                    <img src="../images/remera.png" alt="">
                     <div>
-                        <p class="title">pantalon SQQ</p>
-                        <p class="description"> Pantalon</p>
-                        <p class="price">$11,000</p>
+                        <p id="title" class="titleProduct">BUZO SQQ</p>
+                        <p id="description">remera naranja</p>
+                        <p>$</p>
+                        <p id="price" class="preciosProductos">3000</p>
                         <div>
-                            <input type="number" id="quantity" name="quantity" min="0" value="0">
-                            <button type="button" id="add-to-cart">Agregar</button>
+                            <button type="button" class="add_tocart">Agregar</button>
                         </div>
                     </div>
                 </div>
+                <div id="tarjet">
+                    <img src="../images/remera.png" alt="">
+                    <div>
+                        <p id="title" class="titleProduct">PANTALON SQQ</p>
+                        <p id="description">remera naranja</p>
+                        <p>$</p>
+                        <p id="price" class="preciosProductos">6500</p>
+                        <div>
+                            <button type="button" class="add_tocart">Agregar</button>
+                        </div>
+                    </div>
+                </div>
+                
 
             </div>
         </main>
@@ -79,5 +104,6 @@
             </div>
             <p>© Kevin Ferreiro</p>
         </footer>
+        <script src="../js/ecommerce.js"></script>
     </body>
 </html>

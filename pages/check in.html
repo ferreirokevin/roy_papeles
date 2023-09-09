@@ -4,9 +4,9 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Roy Papeles, canta autor, banda de rock nacional sin querer queriendo">
-        <meta name="description" content="contactate con roy papeles">
+        <meta name="description" content="mira las redes de todas las bandas de rock nacional de roy papeles">
         <meta name="keywords" content="roy papeles, rock nacional, sin querer queriendo, sqq, la ricky band, waldemar salas, canta autor, musico">
-        <title>Contacto - Roy Papeles</title>
+        <title>Redes - Roy Papeles</title>
         <link rel="shortcut icon" href="../images/logo_blue.png">
         <link rel="stylesheet" href="../css/app.css">
     </head>
@@ -41,23 +41,22 @@
                 </div>
             </div>
         </header>
-        <main>
-            <div>
-                <h2>Contacto</h2>
-                <div class="contact">
-                    <img src="../images/roy_envuelto_en_bandera.jpg" alt="">
-                    <div class="contact__box">
-                        <form>
-                            <h5>Nombre y Apellido</h5>
-                            <input type="text" >
-                            <h5>Email</h5>
-                            <input type="text" >
-                            <h5>Contenido</h5>                            
-                            <textarea name="" id="" cols="30" rows="10" ></textarea>        
-                            <input class="contact__send" type="submit" value="ENVIAR">                            
-                        </form>                                                
-                    </div>
-                </div>
+        <main class="main__checkin">
+            <h2>INICIAR SESIÓN</h2>
+            <div class="registrarse__box">
+                <form id="formularioRegistro">
+                    <h5>EMAIL</h5>
+                    <input type="text" id="email">
+                    <h5>REPETIR EMAIL</h5>
+                    <input type="text" id="repetirEmail"> 
+                    <h5>CONTRASEÑA</h5>
+                    <input type="password" id="contraseña">
+                    <h5>REPETIR CONTRASEÑA</h5>
+                    <input type="password" id="repetirContraseña">      
+                    <input class="contact__send" type="submit" value="REGISTRARSE">
+                    <div id="mensajeRegistroError" style="color: red;"></div>
+                    <div id="mensajeRegistroCorrecto" style="color: green;"></div>                       
+                </form>                                                
             </div>
         </main>
         <footer>
@@ -71,6 +70,7 @@
             </div>
             <p>© Kevin Ferreiro</p>
         </footer>
+        <script src="../js/script.js"></script>
         <script src="../js/login.js"></script>
     </body>
 </html>

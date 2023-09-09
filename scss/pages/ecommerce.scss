@@ -1,11 +1,11 @@
-.tarjet__contenedor{
+#tarjet__contenedor{
     width: 100vw;
     height: auto;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    .tarjet{
+    #tarjet{
         top: 10%;
         width: 200px;
         height: auto;
@@ -20,21 +20,18 @@
             max-width: 100%;
             border-radius: 30px;
         }
-        .title{
+        #title{
             font-size: 150%;
             color: $color-primario;
         }
-        .description{
+        #description{
             font-size: 80%;
             color: $color-secundario;
         }
-        .price{
+        #price{
             display: flex;
             justify-content: end;
             color: $color-cuaternario;
-        }
-        input{
-            width: 25%;
         }
         button{
             background-color: $color-cuaternario;
@@ -44,10 +41,61 @@
             border: none;
             width: 70%;
             margin-left: 3%;
+            cursor: pointer;
             
         }
         @include mediaquery-tablet(){
             padding: 5%;
         }
+    }
+}
+#carrito{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    background-color: $color-cuaternario;
+    padding: 15px 40px;
+    color: white;
+    border-radius: 30px;
+    border: none;
+    width: 5%;
+    height: auto;
+    margin-left: 80%;
+}
+#ventanaCarrito{
+    position: fixed;
+    background-color: $color-cuaternario;
+    width: 20%;
+    height: auto;
+    padding: 1%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+    margin-left: 70%;
+    #productoCarrito{
+        display: flex;
+        flex-direction: column;
+        div{
+            display: flex;
+            p{
+                
+                &:last-child{
+                    margin-left:20%;
+                    
+                }
+            }
+        }
+    }
+    a{
+        background-color: $color-terciario;
+        padding: 1% 5%;
+        color: white;
+        border-radius: 30px;
+        border: none;
+        width: 70%;
+        margin-left: 3%;
+        text-align: center;
     }
 }
