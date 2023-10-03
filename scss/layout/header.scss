@@ -184,6 +184,9 @@ header {
                 background-color: white;
               }
             }
+            p{
+              color: $color-cuaternario;
+            }
           }
           @include mediaquery-tablet() {
             display: flex;

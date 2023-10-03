@@ -20,25 +20,25 @@ formularioRegistro.addEventListener("submit", function (event) {
     emailRegistro.value !== repetirEmailRegistro.value &&
     contraseñaRegistro.value === repetirContraseñaRegistro.value
   ) {
-    mensajeRegistroError.textContent = "Los emails no coinciden";
+    swal("Los emails no coinciden", "Vuelve a intentarlo", "error");
     limpiarFormulario();
   } else if (
     emailRegistro.value === repetirEmailRegistro.value &&
     contraseñaRegistro.value !== repetirContraseñaRegistro.value
   ) {
-    mensajeRegistroError.textContent = "las contraseñas no coinciden";
+    swal("las contraseñas no coinciden", "Vuelve a intentarlo", "error");
     limpiarFormulario();
   } else if (usuarios.some((usuario) => usuario.email === email)) {
-    mensajeRegistroError.textContent = "El email ya ha sido registrado";
+    swal("El email ya ha sido registrado", "Vuelve a intentarlo", "error");
     limpiarFormulario();
   } else {
-    mensajeRegistroCorrecto.textContent = "Registrado exitosamente";
+    swal("Registrado exitosamente", "Bienvenido!?", "success");
     usuarios.push({
       email: emailRegistro.value,
       contraseña: contraseñaRegistro.value,
     });
     localStorage.setItem("usuarios", JSON.stringify(usuarios));
-    
+
     limpiarFormulario();
   }
 });
@@ -49,14 +49,3 @@ function limpiarFormulario() {
   contraseñaRegistro.value = "";
   repetirContraseñaRegistro.value = "";
 }
-
-
-
-
-
-
-
-
-
-
-

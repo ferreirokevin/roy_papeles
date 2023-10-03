@@ -322,6 +322,9 @@ header .header__container .header__nav nav ul .buttons .registrarse:hover {
   color: #000;
   background-color: white;
 }
+header .header__container .header__nav nav ul .buttons p {
+  color: #ffb12b;
+}
 @media (max-width: 992px) {
   header .header__container .header__nav nav ul {
     display: flex;

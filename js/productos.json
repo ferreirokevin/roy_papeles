@@ -1,0 +1,20 @@
+[
+  {
+    "nombre": "Remera SQQ",
+    "descripcion": "Remera naranja",
+    "precio": 5200,
+    "imagen": "../images/remera.png"
+  },
+  {
+    "nombre": "Pantalón SQQ",
+    "descripcion": "Pantalon",
+    "precio": 15300,
+    "imagen": "../images/pantalon.jpeg"
+  },
+  {
+    "nombre": "CD SQQ",
+    "descripcion": "Albores",
+    "precio": 1300,
+    "imagen": "../images/cd.png"
+  }
+]
