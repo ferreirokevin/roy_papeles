@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
   let carritoAbierto = false;
   let precioTotal = 0;
 
-  let carrito = JSON.parse(localStorage.getItem("carrito"));
+  let carrito = JSON.parse(localStorage.getItem("carrito")) || {};
 
   async function cargarProductos() {
     try {
@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", function () {
         tarjeta.querySelector(".preciosProductos").textContent
       );
 
-      if (carrito.hasOwnProperty(tituloProducto)) {
+      if (carrito && carrito.hasOwnProperty(tituloProducto)) {
         carrito[tituloProducto].cantidad++;
       } else {
         carrito[tituloProducto] = { cantidad: 1, precioUnitario };
@@ -139,7 +139,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function modificarCantidadEnCarrito(producto, cantidad) {
-    if (carrito.hasOwnProperty(producto)) {
+    if (carrito && carrito.hasOwnProperty(producto)) {
       carrito[producto].cantidad += cantidad;
       if (carrito[producto].cantidad <= 0) {
         delete carrito[producto];
