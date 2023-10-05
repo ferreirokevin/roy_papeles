@@ -8,13 +8,13 @@ const users = document.getElementById("users");
 if (formularioIngreso) {
   formularioIngreso.addEventListener("submit", function (event) {
     event.preventDefault();
-
+    const emailIngresominuscula = emailIngreso.value.toLowerCase();
     const todosLosUsuarios = localStorage.getItem("usuarios");
     const usuarios = JSON.parse(todosLosUsuarios);
 
     const usuarioActivo = usuarios.find(
       (usuario) =>
-        usuario.email === emailIngreso.value &&
+        usuario.email === emailIngresominuscula &&
         usuario.contraseña === contraseñaIngreso.value
     );
 
@@ -38,7 +38,7 @@ function limpiarmensaje() {
 }
 
 function limpiarFormularioIngreso() {
-  emailIngreso.value = "";
+  emailIngresominuscula = "";
   contraseñaIngreso.value = "";
 }
 

@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
   let carritoAbierto = false;
   let precioTotal = 0;
 
-  let carrito = JSON.parse(localStorage.getItem("carrito")) || {};
+  let carrito = JSON.parse(localStorage.getItem("carrito"));
 
   async function cargarProductos() {
     try {
@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
         agregarProducto(producto);
       });
     } catch (error) {
-      console.error("Error al cargar los productos:", error);
+      alert("Error al cargar los productos:", error);
     }
   }
 
@@ -129,7 +129,7 @@ document.addEventListener("DOMContentLoaded", function () {
       productoCarrito.innerHTML = null;
       total.innerHTML = "Gracias por comprar";
 
-      carrito = {};
+      carrito = [];
       guardarCarritoEnLocalStorage();
     }
   });
